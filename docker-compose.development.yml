@@ -1,0 +1,12 @@
+version: "3"
+services:
+  md-frontend-app:
+    build:
+      context: ./
+      dockerfile: Dockerfile.development
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./src:/app/src:ro
+    env_file:
+      - .env.development.local

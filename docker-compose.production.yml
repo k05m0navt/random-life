@@ -1,0 +1,10 @@
+version: "3"
+services:
+  md-frontend-app:
+    build:
+      context: ./
+      dockerfile: Dockerfile.production
+    ports:
+      - "80:80"
+    env_file:
+      - .env.production.local
