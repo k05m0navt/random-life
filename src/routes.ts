@@ -2,7 +2,7 @@ import { LazyExoticComponent, FC, lazy } from 'react';
 
 type Route = {
   path: string;
-  page: LazyExoticComponent<FC<any>>;
+  page: LazyExoticComponent<FC>;
 };
 
 export const routes: Route[] = [
